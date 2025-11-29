@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getMagazineImages } from '@/lib/magazineImages';
+import { magazineImages } from '@/lib/magazineImages';
 
 export async function GET(request: NextRequest) {
 	const searchParams = request.nextUrl.searchParams;
@@ -10,7 +10,8 @@ export async function GET(request: NextRequest) {
 		return NextResponse.json({ error: 'Magazine ID is required' }, { status: 400 });
 	}
 
-	const images = getMagazineImages(magazine, issue || undefined);
+	const key = issue ? `${magazine}-${issue}` : magazine;
+	const images = magazineImages[key] || [];
 
 	return NextResponse.json({ images });
 }
