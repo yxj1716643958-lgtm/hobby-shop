@@ -1,63 +1,202 @@
-# UKA模工坊 - 日系模型与手办电商平台
+# 模工坊杂志资料库 | Model Workshop Magazine Library
 
-基于 Next.js 14、TypeScript 和 Tailwind CSS 构建的现代化电商网站。
+基于 Next.js 14、TypeScript 和 Tailwind CSS 构建的现代化杂志资料展示网站。
 
-## Features
+## ✨ 功能特点
 
-- Responsive design
-- Product catalog with grid layout
-- Shopping cart functionality
-- Search and filtering
-- User authentication ready
-- Modern UI with Tailwind CSS
+- 🎨 **现代化设计**：模仿 Hobby Japan 风格的专业界面
+- 🌍 **多语言支持**：内置中文、英文、俄文、日文切换
+- 📱 **响应式布局**：完美支持手机、平板、电脑
+- 🖼️ **图片预览**：点击图片全屏查看
+- 📚 **期刊管理**：按期数浏览不同内容
+- ⚡ **快速加载**：优化的图片加载和缓存
 
-## Getting Started
+## 🌐 支持的语言
 
-1. Install dependencies:
+- 🇨🇳 中文 (Chinese)
+- 🇺🇸 English (英文)
+- 🇷🇺 Русский (俄文)
+- 🇯🇵 日本語 (日文)
+
+## 📖 收录内容
+
+### 1. 匠心雕龙 - 模工坊十周年特刊
+- 中国模型师作品精选集
+- 50+位模型师作品
+- 制作技法分享
+
+### 2. 模工坊月刊 2024
+- 11期完整收录（1-12期，缺第9期）
+- 年度最佳作品评选
+- 新品模型测评
+
+### 3. 模工坊月刊 2025
+- 6期最新内容（01-06期）
+- 前沿制作技术
+- 大师访谈专栏
+
+## 🚀 快速开始
+
+### 安装依赖
 ```bash
-cd hobby-shop
 npm install
 ```
 
-2. Run the development server:
+### 启动开发服务器
 ```bash
 npm run dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
+### 访问网站
+打开浏览器访问：http://localhost:3000
 
-## Tech Stack
+### 构建生产版本
+```bash
+npm run build
+npm start
+```
 
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
-- React 18
-
-## Project Structure
+## 📁 项目结构
 
 ```
 hobby-shop/
+├── public/
+│   └── magazines/          # 杂志图片资源
+│       ├── 10th-anniversary/
+│       ├── 2024/
+│       │   ├── 1/
+│       │   ├── 2/
+│       │   └── ...
+│       └── 2025/
+│           ├── 01/
+│           ├── 02/
+│           └── ...
 ├── src/
 │   ├── app/
+│   │   ├── api/
+│   │   │   └── images/     # 图片API
+│   │   ├── magazine/
+│   │   │   └── [id]/       # 杂志详情页
 │   │   ├── layout.tsx
 │   │   ├── page.tsx
 │   │   └── globals.css
-│   └── components/
-│       ├── Header.tsx
-│       ├── Hero.tsx
-│       ├── ProductGrid.tsx
-│       └── Footer.tsx
+│   ├── components/
+│   │   ├── Header.tsx      # 导航栏（含语言切换）
+│   │   ├── Hero.tsx        # 首页横幅
+│   │   ├── ProductGrid.tsx # 杂志网格
+│   │   └── Footer.tsx      # 页脚
+│   └── lib/
+│       ├── translations.ts # 多语言配置
+│       └── LanguageContext.tsx # 语言上下文
 ├── package.json
-├── tsconfig.json
-├── tailwind.config.js
-└── next.config.js
+└── README.md
 ```
 
-## Next Steps
+## 🎨 设计特点
 
-- Add product detail pages
-- Implement shopping cart state management
-- Add user authentication
-- Connect to a backend API
-- Add payment integration
-- Implement product search and filtering
+### 配色方案
+- 主色调：蓝色系（#2563EB）
+- 强调色：黄色（#FBBF24）
+- 背景色：灰色系（#F9FAFB）
+- 深色模式：深灰色（#111827）
+
+### 字体
+- 标题：粗体、大字号
+- 正文：常规、易读
+- 按钮：中等粗细、清晰
+
+### 交互效果
+- 悬停放大效果
+- 平滑过渡动画
+- 阴影层次感
+- 响应式触摸
+
+## 🔧 技术栈
+
+- **框架**: Next.js 14 (App Router)
+- **语言**: TypeScript
+- **样式**: Tailwind CSS
+- **状态管理**: React Hooks + Context API
+- **图片处理**: Next.js Image Optimization
+- **API**: Next.js API Routes
+
+## 📝 使用说明
+
+### 切换语言
+1. 点击右上角的语言按钮（显示国旗图标）
+2. 从下拉菜单中选择语言
+3. 页面内容会立即切换到所选语言
+
+### 浏览杂志
+1. 在首页点击任意杂志卡片
+2. 进入详情页查看完整内容
+3. 对于月刊，可以选择不同期数
+
+### 查看图片
+1. 在详情页滚动查看所有图片
+2. 点击任意图片进入全屏预览
+3. 点击关闭按钮或背景退出预览
+
+## 🌟 特色功能
+
+### 1. 智能语言切换
+- 自动保存用户语言偏好
+- 页面刷新后保持选择
+- 所有文本实时切换
+
+### 2. 期刊浏览
+- 按期数组织内容
+- 快速切换不同期数
+- 自动加载对应图片
+
+### 3. 图片优化
+- 懒加载技术
+- 渐进式加载
+- 全屏预览功能
+
+## 📦 部署说明
+
+### Vercel 部署
+```bash
+npm run build
+vercel deploy
+```
+
+### 其他平台
+1. 构建项目：`npm run build`
+2. 上传 `.next` 文件夹和 `public` 文件夹
+3. 配置环境变量（如需要）
+4. 启动服务：`npm start`
+
+## 🔄 更新日志
+
+### v2.0.0 (2024-11-29)
+- ✨ 添加多语言支持（中英俄日）
+- 🎨 全新 UI 设计，模仿 Hobby Japan 风格
+- 📱 优化响应式布局
+- 🖼️ 改进图片预览功能
+- ⚡ 性能优化
+
+### v1.0.0 (2024-11-29)
+- 🎉 初始版本发布
+- 📚 收录3本杂志资料
+- 🖼️ 图片展示功能
+- 📱 响应式设计
+
+## 📄 许可证
+
+本项目仅供学习交流使用。
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 📧 联系方式
+
+如有问题或建议，请通过以下方式联系：
+- 提交 GitHub Issue
+- 发送邮件至项目维护者
+
+---
+
+**注意**：本项目中的杂志内容版权归原出版方所有，仅供个人学习研究使用。
