@@ -7,14 +7,10 @@ export async function GET(request: NextRequest) {
 	const issue = searchParams.get('issue');
 
 	if (!magazine) {
-		return NextResponse.json({ error: 'Magazine parameter required' }, { status: 400 });
+		return NextResponse.json({ error: 'Magazine ID is required' }, { status: 400 });
 	}
 
-	try {
-		const images = getMagazineImages(magazine, issue || undefined);
-		return NextResponse.json({ images });
-	} catch (error) {
-		console.error('Error getting images:', error);
-		return NextResponse.json({ error: 'Failed to get images' }, { status: 500 });
-	}
+	const images = getMagazineImages(magazine, issue || undefined);
+
+	return NextResponse.json({ images });
 }
