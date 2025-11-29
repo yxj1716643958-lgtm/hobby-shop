@@ -1,0 +1,10 @@
+# Ignore large magazine images during Vercel deployment
+public/magazines/2024/**
+public/magazines/2025/**
+public/magazines/10th-anniversary/*.jpg
+!public/magazines/10th-anniversary/88.jpg
+!public/magazines/10th-anniversary/086.jpg
+!public/magazines/10th-anniversary/092.jpg
+!public/magazines/10th-anniversary/241.jpg
+!public/magazines/10th-anniversary/F91-cover.jpg
+!public/magazines/10th-anniversary/10010.png
