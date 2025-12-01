@@ -5,6 +5,7 @@ export const translations = {
 		allMagazines: '全部资料',
 		anniversary: '十周年特刊',
 		monthly: '月刊杂志',
+		domesticModels: '国模',
 		search: '搜索...',
 
 		// Hero
@@ -49,6 +50,7 @@ export const translations = {
 		allMagazines: 'All Magazines',
 		anniversary: '10th Anniversary',
 		monthly: 'Monthly Issues',
+		domesticModels: 'Domestic Models',
 		search: 'Search...',
 
 		// Hero
@@ -93,6 +95,7 @@ export const translations = {
 		allMagazines: 'Все журналы',
 		anniversary: '10-летие',
 		monthly: 'Ежемесячные выпуски',
+		domesticModels: 'Отечественные модели',
 		search: 'Поиск...',
 
 		// Hero
@@ -137,6 +140,7 @@ export const translations = {
 		allMagazines: 'すべての雑誌',
 		anniversary: '10周年記念',
 		monthly: '月刊誌',
+		domesticModels: '国産モデル',
 		search: '検索...',
 
 		// Hero

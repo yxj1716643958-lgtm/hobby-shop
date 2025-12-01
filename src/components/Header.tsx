@@ -50,6 +50,9 @@ export default function Header() {
 						<Link href="#" className="text-gray-300 hover:text-amber-400 transition font-medium text-sm uppercase tracking-wide">
 							{t('monthly')}
 						</Link>
+						<Link href="/models" className="text-gray-300 hover:text-amber-400 transition font-medium text-sm uppercase tracking-wide">
+							{t('domesticModels')}
+						</Link>
 					</nav>
 
 					{/* Right Side */}
@@ -131,6 +134,9 @@ export default function Header() {
 						</Link>
 						<Link href="#" className="block py-3 text-gray-300 hover:text-amber-400 hover:bg-gray-800 px-4 rounded transition">
 							{t('monthly')}
+						</Link>
+						<Link href="/models" className="block py-3 text-gray-300 hover:text-amber-400 hover:bg-gray-800 px-4 rounded transition">
+							{t('domesticModels')}
 						</Link>
 					</nav>
 				)}
