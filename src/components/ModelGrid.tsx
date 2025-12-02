@@ -22,20 +22,20 @@ export default function ModelGrid() {
 					<div className="inline-flex items-center gap-3 mb-6">
 						<div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-500" />
 						<span className="text-amber-500 text-sm font-bold uppercase tracking-[0.3em]">
-							Domestic Models
+							{t('domesticModels')}
 						</span>
 						<div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-500" />
 					</div>
 
 					<h2 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight">
-						国产模型
+						{t('modelTitle')}
 						<span className="block text-3xl md:text-4xl font-light text-gray-400 mt-4">
-							精选作品集
+							{t('modelSubtitle')}
 						</span>
 					</h2>
 
 					<p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
-						探索国内优秀模型师的匠心之作，感受每一个细节背后的故事
+						{t('modelDescription')}
 					</p>
 				</div>
 
@@ -59,7 +59,7 @@ export default function ModelGrid() {
 
 								{/* Featured Badge */}
 								<div className="absolute top-8 right-8 bg-amber-500 text-black px-6 py-3 rounded-full font-black text-sm uppercase tracking-wider shadow-lg">
-									精选推荐
+									{t('featuredModel')}
 								</div>
 							</div>
 
@@ -77,7 +77,7 @@ export default function ModelGrid() {
 									</h3>
 
 									<div className="flex items-center gap-4 text-gray-300">
-										<span className="text-lg font-medium">探索作品</span>
+										<span className="text-lg font-medium">{t('exploreWork')}</span>
 										<svg className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
 										</svg>
@@ -120,7 +120,7 @@ export default function ModelGrid() {
 									</h3>
 
 									<div className="flex items-center text-gray-400 text-sm group-hover:text-gray-300 transition-colors">
-										<span>查看详情</span>
+										<span>{t('viewDetails')}</span>
 										<svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
 										</svg>
@@ -137,7 +137,7 @@ export default function ModelGrid() {
 						href="/models"
 						className="group inline-flex items-center gap-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-black font-bold px-10 py-5 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/50"
 					>
-						<span className="text-lg">查看全部国模作品</span>
+						<span className="text-lg">{t('viewAllModels')}</span>
 						<svg className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
 						</svg>

@@ -25,13 +25,10 @@ export default function Header() {
 				<div className="flex items-center justify-between h-24 lg:h-28">
 					{/* Logo */}
 					<Link href="/" className="flex items-center gap-4 group">
-						<div className="relative">
-							{/* Main Logo Container */}
-							<div className="relative bg-gradient-to-br from-red-600 via-red-700 to-red-900 rounded-xl px-6 py-3">
-								<span className="relative z-10 font-black text-2xl tracking-wider text-white">
-									模工坊
-								</span>
-							</div>
+						<div className="bg-red-600 rounded-2xl px-8 py-4">
+							<span className="font-black text-3xl tracking-wide text-white">
+								模工坊
+							</span>
 						</div>
 
 						<div className="hidden md:block">

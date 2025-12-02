@@ -14,43 +14,14 @@ export default function Footer() {
 					{/* Brand Section */}
 					<div className="lg:col-span-2">
 						<div className="flex items-center gap-6 mb-8">
-							<div className="relative group">
-								{/* Outer Glow */}
-								<div className="absolute -inset-3 bg-gradient-to-r from-red-600 via-amber-500 to-red-600 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-all duration-500 animate-pulse"></div>
-
-								{/* Main Logo Container */}
-								<div className="relative">
-									{/* Background Layer */}
-									<div className="absolute inset-0 bg-gradient-to-br from-red-600 via-red-700 to-red-900 rounded-2xl"></div>
-
-									{/* Border Glow */}
-									<div className="absolute inset-0 rounded-2xl border-2 border-amber-400/40 shadow-[0_0_30px_rgba(251,191,36,0.4)]"></div>
-
-									{/* Content */}
-									<div className="relative px-8 py-4 flex items-center justify-center">
-										<span className="relative z-10 font-black text-3xl tracking-wider bg-gradient-to-b from-white via-gray-100 to-gray-300 bg-clip-text text-transparent drop-shadow-[0_3px_6px_rgba(0,0,0,0.6)]">
-											模工坊
-										</span>
-
-										{/* Shine Effect */}
-										<div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-									</div>
-
-									{/* Top Accent Line */}
-									<div className="absolute top-0 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
-
-									{/* Bottom Accent Line */}
-									<div className="absolute bottom-0 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
-								</div>
-
-								{/* Decorative Corner Elements */}
-								<div className="absolute -top-1.5 -right-1.5 w-4 h-4 border-t-2 border-r-2 border-amber-400 rounded-tr-lg"></div>
-								<div className="absolute -bottom-1.5 -left-1.5 w-4 h-4 border-b-2 border-l-2 border-amber-400 rounded-bl-lg"></div>
+							<div className="bg-red-600 rounded-2xl px-8 py-4">
+								<span className="font-black text-3xl tracking-wide text-white">
+									模工坊
+								</span>
 							</div>
 
 							<div>
-								<p className="text-amber-400 text-base font-bold tracking-[0.2em] uppercase mb-1">Magazine Library</p>
-								<div className="h-px bg-gradient-to-r from-amber-400 via-amber-400/50 to-transparent"></div>
+								<p className="text-amber-400 text-base font-bold tracking-[0.2em] uppercase">Magazine Library</p>
 							</div>
 						</div>
 						<p className="text-gray-400 mb-4 max-w-md leading-relaxed">

@@ -8,6 +8,15 @@ export const translations = {
 		domesticModels: '国模',
 		search: '搜索...',
 
+		// Model Section
+		modelTitle: '国产模型',
+		modelSubtitle: '精选作品集',
+		modelDescription: '探索国内优秀模型师的匠心之作，感受每一个细节背后的故事',
+		featuredModel: '精选推荐',
+		exploreWork: '探索作品',
+		viewDetails: '查看详情',
+		viewAllModels: '查看全部国模作品',
+
 		// Hero
 		heroTitle: '模工坊',
 		heroSubtitle: '探索模工坊月刊与十周年特刊',
@@ -52,6 +61,15 @@ export const translations = {
 		monthly: 'Monthly Issues',
 		domesticModels: 'Domestic Models',
 		search: 'Search...',
+
+		// Model Section
+		modelTitle: 'Domestic Models',
+		modelSubtitle: 'Selected Collection',
+		modelDescription: 'Explore masterpieces by outstanding domestic modelers and feel the story behind every detail',
+		featuredModel: 'Featured',
+		exploreWork: 'Explore Work',
+		viewDetails: 'View Details',
+		viewAllModels: 'View All Models',
 
 		// Hero
 		heroTitle: 'Model Workshop',
@@ -98,6 +116,15 @@ export const translations = {
 		domesticModels: 'Отечественные модели',
 		search: 'Поиск...',
 
+		// Model Section
+		modelTitle: 'Отечественные модели',
+		modelSubtitle: 'Избранная коллекция',
+		modelDescription: 'Исследуйте шедевры выдающихся отечественных моделистов и почувствуйте историю за каждой деталью',
+		featuredModel: 'Рекомендуемые',
+		exploreWork: 'Исследовать работу',
+		viewDetails: 'Посмотреть детали',
+		viewAllModels: 'Посмотреть все модели',
+
 		// Hero
 		heroTitle: 'Model Workshop',
 		heroSubtitle: 'Изучайте ежемесячные выпуски и специальный выпуск к 10-летию',
@@ -142,6 +169,15 @@ export const translations = {
 		monthly: '月刊誌',
 		domesticModels: '国産モデル',
 		search: '検索...',
+
+		// Model Section
+		modelTitle: '国産モデル',
+		modelSubtitle: '厳選コレクション',
+		modelDescription: '優れた国内モデラーの傑作を探索し、すべての細部に込められた物語を感じてください',
+		featuredModel: 'おすすめ',
+		exploreWork: '作品を探索',
+		viewDetails: '詳細を見る',
+		viewAllModels: 'すべてのモデルを見る',
 
 		// Hero
 		heroTitle: 'モデルワークショップ',
