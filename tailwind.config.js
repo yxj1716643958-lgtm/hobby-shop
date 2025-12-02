@@ -11,6 +11,9 @@ module.exports = {
 				primary: '#e60012',
 				secondary: '#333333',
 			},
+			fontFamily: {
+				sans: ['var(--font-noto-sans-sc)', 'system-ui', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],

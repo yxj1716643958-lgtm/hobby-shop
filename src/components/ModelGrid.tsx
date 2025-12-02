@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLanguage } from '@/lib/LanguageContext';
@@ -11,65 +10,135 @@ export default function ModelGrid() {
 	const modelNames = getModelNames();
 
 	return (
-		<section className="py-20 bg-black">
-			<div className="container mx-auto px-4">
+		<section className="relative py-32 bg-black overflow-hidden">
+			{/* Background Effects */}
+			<div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/20 to-black" />
+			<div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
+			<div className="absolute bottom-0 right-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl" />
+
+			<div className="relative container mx-auto px-4">
 				{/* Section Header */}
-				<div className="text-center mb-16">
-					<h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-						{t('domesticModels')}
+				<div className="text-center mb-20">
+					<div className="inline-flex items-center gap-3 mb-6">
+						<div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-500" />
+						<span className="text-amber-500 text-sm font-bold uppercase tracking-[0.3em]">
+							Domestic Models
+						</span>
+						<div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-500" />
+					</div>
+
+					<h2 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight">
+						国产模型
+						<span className="block text-3xl md:text-4xl font-light text-gray-400 mt-4">
+							精选作品集
+						</span>
 					</h2>
-					<p className="text-gray-400 text-lg">
-						国产模型作品精选集
+
+					<p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+						探索国内优秀模型师的匠心之作，感受每一个细节背后的故事
 					</p>
 				</div>
 
-				{/* Models Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-					{modelNames.map((modelName) => (
-						<Link
-							key={modelName}
-							href={`/models/${encodeURIComponent(modelName)}`}
-							className="group relative bg-gray-900 rounded-2xl overflow-hidden hover:ring-4 hover:ring-amber-400 transition-all duration-300 hover:scale-105"
-						>
-							<div className="relative aspect-[3/4] overflow-hidden">
+				{/* Featured Model - Large Card */}
+				{modelNames.length > 0 && (
+					<Link
+						href={`/models/${encodeURIComponent(modelNames[0])}`}
+						className="group block mb-12 max-w-6xl mx-auto"
+					>
+						<div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-amber-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
+							<div className="relative aspect-[21/9] overflow-hidden">
 								<Image
-									src={getModelCover(modelName)}
-									alt={modelName}
+									src={getModelCover(modelNames[0])}
+									alt={modelNames[0]}
 									fill
-									className="object-cover group-hover:scale-110 transition-transform duration-500"
-									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+									className="object-cover group-hover:scale-105 transition-transform duration-700"
+									sizes="(max-width: 1200px) 100vw, 1200px"
+									priority
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+								<div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent" />
 
-								{/* Badge */}
-								<div className="absolute top-4 right-4 bg-amber-500 text-black px-3 py-1 rounded-full text-xs font-bold uppercase">
-									国模
+								{/* Featured Badge */}
+								<div className="absolute top-8 right-8 bg-amber-500 text-black px-6 py-3 rounded-full font-black text-sm uppercase tracking-wider shadow-lg">
+									精选推荐
 								</div>
 							</div>
 
-							<div className="absolute bottom-0 left-0 right-0 p-6">
-								<h3 className="text-2xl font-bold text-white mb-2 group-hover:text-amber-400 transition">
-									{modelName}
-								</h3>
-								<div className="flex items-center text-gray-400 text-sm">
-									<svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-									</svg>
-									<span>查看作品</span>
+							<div className="absolute inset-0 flex items-center">
+								<div className="p-12 md:p-16 max-w-2xl">
+									<div className="flex items-center gap-3 mb-4">
+										<div className="w-16 h-1 bg-amber-500 rounded-full" />
+										<span className="text-amber-400 text-sm font-bold uppercase tracking-wider">
+											Featured
+										</span>
+									</div>
+
+									<h3 className="text-4xl md:text-6xl font-black text-white mb-6 group-hover:text-amber-400 transition-colors duration-300">
+										{modelNames[0]}
+									</h3>
+
+									<div className="flex items-center gap-4 text-gray-300">
+										<span className="text-lg font-medium">探索作品</span>
+										<svg className="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+										</svg>
+									</div>
 								</div>
 							</div>
-						</Link>
-					))}
-				</div>
+						</div>
+					</Link>
+				)}
+
+				{/* Other Models Grid */}
+				{modelNames.length > 1 && (
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+						{modelNames.slice(1).map((modelName, index) => (
+							<Link
+								key={modelName}
+								href={`/models/${encodeURIComponent(modelName)}`}
+								className="group relative rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-black border border-gray-800 hover:border-amber-500/50 transition-all duration-500 hover:scale-105 hover:shadow-xl hover:shadow-amber-500/10"
+								style={{ animationDelay: `${index * 100}ms` }}
+							>
+								<div className="relative aspect-[3/4] overflow-hidden">
+									<Image
+										src={getModelCover(modelName)}
+										alt={modelName}
+										fill
+										className="object-cover group-hover:scale-110 transition-transform duration-700"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+									/>
+									<div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+
+									{/* Hover Overlay */}
+									<div className="absolute inset-0 bg-gradient-to-t from-amber-500/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+								</div>
+
+								<div className="absolute bottom-0 left-0 right-0 p-6">
+									<div className="w-8 h-0.5 bg-amber-500 rounded-full mb-3 group-hover:w-full transition-all duration-500" />
+
+									<h3 className="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors duration-300">
+										{modelName}
+									</h3>
+
+									<div className="flex items-center text-gray-400 text-sm group-hover:text-gray-300 transition-colors">
+										<span>查看详情</span>
+										<svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+										</svg>
+									</div>
+								</div>
+							</Link>
+						))}
+					</div>
+				)}
 
 				{/* View All Button */}
-				<div className="text-center mt-12">
+				<div className="text-center mt-16">
 					<Link
 						href="/models"
-						className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-black font-bold px-8 py-4 rounded-xl transition-all hover:scale-105"
+						className="group inline-flex items-center gap-3 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-black font-bold px-10 py-5 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/50"
 					>
-						<span>查看全部国模</span>
-						<svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<span className="text-lg">查看全部国模作品</span>
+						<svg className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
 						</svg>
 					</Link>
