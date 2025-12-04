@@ -51,7 +51,7 @@ export default function ModelDetailPage({ params }: { params: { name: string } }
 						</Link>
 
 						<h1 className="text-xl md:text-2xl font-bold text-white">
-							{modelName}
+							{t(modelName as any) || modelName}
 						</h1>
 
 						<div className="text-sm text-gray-400">

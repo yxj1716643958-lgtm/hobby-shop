@@ -68,12 +68,12 @@ export default function ModelGrid() {
 									<div className="flex items-center gap-3 mb-4">
 										<div className="w-16 h-1 bg-amber-500 rounded-full" />
 										<span className="text-amber-400 text-sm font-bold uppercase tracking-wider">
-											Featured
+											{t('featuredModel')}
 										</span>
 									</div>
 
 									<h3 className="text-4xl md:text-6xl font-black text-white mb-6 group-hover:text-amber-400 transition-colors duration-300">
-										{modelNames[0]}
+										{t(modelNames[0] as any) || modelNames[0]}
 									</h3>
 
 									<div className="flex items-center gap-4 text-gray-300">
@@ -116,7 +116,7 @@ export default function ModelGrid() {
 									<div className="w-8 h-0.5 bg-amber-500 rounded-full mb-3 group-hover:w-full transition-all duration-500" />
 
 									<h3 className="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors duration-300">
-										{modelName}
+										{t(modelName as any) || modelName}
 									</h3>
 
 									<div className="flex items-center text-gray-400 text-sm group-hover:text-gray-300 transition-colors">

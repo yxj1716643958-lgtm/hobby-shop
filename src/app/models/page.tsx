@@ -28,10 +28,10 @@ export default function ModelsPage() {
 							</span>
 						</div>
 						<h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight">
-							国产模型精选
+							{t('modelTitle')}
 						</h1>
 						<p className="text-xl md:text-2xl text-gray-400 font-light">
-							探索国内优秀模型作品 · 感受匠心工艺之美
+							{t('modelDescription')}
 						</p>
 					</div>
 				</div>
@@ -70,7 +70,7 @@ export default function ModelsPage() {
 								</div>
 
 								<h3 className="text-3xl md:text-4xl font-black text-white mb-4 group-hover:text-amber-400 transition-colors duration-300">
-									{modelName}
+									{t(modelName as any) || modelName}
 								</h3>
 
 								<div className="flex items-center gap-4 text-gray-400 group-hover:text-gray-300 transition-colors">
@@ -78,7 +78,7 @@ export default function ModelsPage() {
 										<svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 											<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
 										</svg>
-										<span className="font-medium">查看详情</span>
+										<span className="font-medium">{t('viewDetails')}</span>
 									</div>
 									<svg className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />

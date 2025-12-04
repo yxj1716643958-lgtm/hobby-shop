@@ -53,6 +53,13 @@ export const translations = {
 		about: '关于资料库',
 		copyright: '模工坊杂志资料库. 仅供学习交流使用',
 
+		// Model Names
+		'20-10 玄武': '20-10 玄武',
+		'20-10 洛克人': '20-10 洛克人',
+		'23-10 热炽仔': '23-10 热炽仔',
+		'24-7 铁魄真盖塔1号': '24-7 铁魄真盖塔1号',
+		'25-1 魔神凯撒SKL': '25-1 魔神凯撒SKL',
+
 		// Magazine Descriptions
 		anniversary10thFull: `模工坊十周年纪念特辑，收录中国顶尖模型师的精选作品。
 
@@ -139,6 +146,13 @@ export const translations = {
 		categories: 'Categories',
 		about: 'About',
 		copyright: 'Model Workshop Magazine Library. For Educational Use Only',
+
+		// Model Names
+		'20-10 玄武': '20-10 Xuanwu (Black Tortoise)',
+		'20-10 洛克人': '20-10 Mega Man',
+		'23-10 热炽仔': '23-10 Blazing Boy',
+		'24-7 铁魄真盖塔1号': '24-7 Iron Soul Getter 1',
+		'25-1 魔神凯撒SKL': '25-1 Mazinkaiser SKL',
 
 		// Magazine Descriptions
 		anniversary10thFull: `Model Workshop 10th Anniversary Special, featuring selected works by top Chinese modelers.
@@ -227,6 +241,13 @@ Stay up-to-date with the latest modeling trends, get first-hand information on n
 		about: 'О библиотеке',
 		copyright: 'Библиотека журналов Model Workshop. Только для образовательных целей',
 
+		// Model Names
+		'20-10 玄武': '20-10 Сюаньу (Черная Черепаха)',
+		'20-10 洛克人': '20-10 Мега Мэн',
+		'23-10 热炽仔': '23-10 Пылающий Мальчик',
+		'24-7 铁魄真盖塔1号': '24-7 Железная Душа Геттер 1',
+		'25-1 魔神凯撒SKL': '25-1 Мазинкайзер SKL',
+
 		// Magazine Descriptions
 		anniversary10thFull: `Специальный выпуск к 10-летию Model Workshop, избранные работы ведущих китайских моделистов.
 
@@ -313,6 +334,13 @@ Stay up-to-date with the latest modeling trends, get first-hand information on n
 		categories: 'カテゴリー',
 		about: 'ライブラリについて',
 		copyright: 'モデルワークショップ雑誌ライブラリ. 教育目的のみ',
+
+		// Model Names
+		'20-10 玄武': '20-10 玄武（げんぶ）',
+		'20-10 洛克人': '20-10 ロックマン',
+		'23-10 热炽仔': '23-10 ブレイジングボーイ',
+		'24-7 铁魄真盖塔1号': '24-7 鉄魄真ゲッター1号',
+		'25-1 魔神凯撒SKL': '25-1 マジンカイザーSKL',
 
 		// Magazine Descriptions
 		anniversary10thFull: `モデルワークショップ10周年記念特集、中国トップモデラーの厳選作品を収録。
