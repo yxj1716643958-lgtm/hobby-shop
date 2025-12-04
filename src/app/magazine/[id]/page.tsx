@@ -11,33 +11,16 @@ const magazinesData = [
 		id: 1,
 		nameKey: 'anniversary10th',
 		descKey: 'anniversary10thDesc',
+		fullDescKey: 'anniversary10thFull',
 		category: 'special',
-		fullDescription: `模工坊十周年纪念特辑，收录中国顶尖模型师的精选作品。
-
-特别企划：
-• 50+位中国模型师作品
-• 制作心得与技法分享
-• 十年发展历程回顾
-• 独家访谈与幕后故事
-
-见证中国模型制作水平的崛起，感受匠人精神的传承。这是一本记录中国模型发展史的珍贵资料。`,
 		coverImage: '/magazines/10th-anniversary/封面封底-01.jpg',
 	},
 	{
 		id: 2,
 		nameKey: 'monthly2024',
 		descKey: 'monthly2024Desc',
+		fullDescKey: 'monthly2024Full',
 		category: 'monthly',
-		fullDescription: `2024年全年度模工坊月刊合集。
-
-年度精选：
-• 12期月刊完整收录
-• 年度最佳作品评选
-• 新品模型测评
-• 制作技法连载
-• 模型展会报道
-
-记录2024年模型界的精彩瞬间，汇集全年最优秀的作品与教程。`,
 		coverImage: 'https://moxing12311.oss-cn-beijing.aliyuncs.com/%E6%A8%A1%E5%B7%A5%E5%9D%8A%E6%9C%88%E5%88%8A2024/1/000.jpg',
 		issues: ['1', '2', '3', '4', '5', '6', '7', '8', '10', '11', '12'],
 	},
@@ -45,17 +28,8 @@ const magazinesData = [
 		id: 3,
 		nameKey: 'monthly2025',
 		descKey: 'monthly2025Desc',
+		fullDescKey: 'monthly2025Full',
 		category: 'monthly',
-		fullDescription: `2025年最新模工坊月刊合集。
-
-最新内容：
-• 最新期刊持续更新
-• 前沿制作技术介绍
-• 新品首发评测
-• 大师访谈专栏
-• 读者作品展示
-
-紧跟模型界最新动态，第一时间了解新品资讯和制作技巧。`,
 		coverImage: '/magazines/2025/01/001.jpg',
 		issues: ['01', '02', '03', '04', '05', '06'],
 	},
@@ -159,7 +133,7 @@ export default function MagazineDetail() {
 
 							<div className="prose prose-invert max-w-none mb-8">
 								<div className="whitespace-pre-line text-gray-300 leading-relaxed">
-									{magazine.fullDescription}
+									{t(magazine.fullDescKey as any)}
 								</div>
 							</div>
 

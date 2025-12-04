@@ -52,6 +52,39 @@ export const translations = {
 		categories: '资料分类',
 		about: '关于资料库',
 		copyright: '模工坊杂志资料库. 仅供学习交流使用',
+
+		// Magazine Descriptions
+		anniversary10thFull: `模工坊十周年纪念特辑，收录中国顶尖模型师的精选作品。
+
+特别企划：
+• 50+位中国模型师作品
+• 制作心得与技法分享
+• 十年发展历程回顾
+• 独家访谈与幕后故事
+
+见证中国模型制作水平的崛起，感受匠人精神的传承。这是一本记录中国模型发展史的珍贵资料。`,
+
+		monthly2024Full: `2024年全年度模工坊月刊合集。
+
+年度精选：
+• 12期月刊完整收录
+• 年度最佳作品评选
+• 新品模型测评
+• 制作技法连载
+• 模型展会报道
+
+记录2024年模型界的精彩瞬间，汇集全年最优秀的作品与教程。`,
+
+		monthly2025Full: `2025年最新模工坊月刊合集。
+
+最新内容：
+• 最新期刊持续更新
+• 前沿制作技术介绍
+• 新品首发评测
+• 大师访谈专栏
+• 读者作品展示
+
+紧跟模型界最新动态，第一时间了解新品资讯和制作技巧。`,
 	},
 	en: {
 		// Header
@@ -106,6 +139,39 @@ export const translations = {
 		categories: 'Categories',
 		about: 'About',
 		copyright: 'Model Workshop Magazine Library. For Educational Use Only',
+
+		// Magazine Descriptions
+		anniversary10thFull: `Model Workshop 10th Anniversary Special, featuring selected works by top Chinese modelers.
+
+Special Features:
+• Works from 50+ Chinese modelers
+• Crafting insights and technique sharing
+• 10-year development retrospective
+• Exclusive interviews and behind-the-scenes
+
+Witness the rise of Chinese model-making standards and feel the inheritance of craftsmanship. This is a precious archive documenting Chinese model development history.`,
+
+		monthly2024Full: `Full year 2024 Model Workshop monthly collection.
+
+Annual Selection:
+• Complete collection of 12 monthly issues
+• Annual best works selection
+• New product model reviews
+• Technique tutorial series
+• Model exhibition coverage
+
+Recording the exciting moments of 2024 in the modeling world, gathering the year's best works and tutorials.`,
+
+		monthly2025Full: `Latest 2025 Model Workshop monthly collection.
+
+Latest Content:
+• Continuously updated latest issues
+• Cutting-edge production techniques
+• New product first reviews
+• Master interview columns
+• Reader works showcase
+
+Stay up-to-date with the latest modeling trends, get first-hand information on new products and crafting techniques.`,
 	},
 	ru: {
 		// Header
@@ -160,6 +226,39 @@ export const translations = {
 		categories: 'Категории',
 		about: 'О библиотеке',
 		copyright: 'Библиотека журналов Model Workshop. Только для образовательных целей',
+
+		// Magazine Descriptions
+		anniversary10thFull: `Специальный выпуск к 10-летию Model Workshop, избранные работы ведущих китайских моделистов.
+
+Специальные функции:
+• Работы более 50 китайских моделистов
+• Обмен опытом и техниками
+• Ретроспектива 10-летнего развития
+• Эксклюзивные интервью и закулисье
+
+Станьте свидетелем роста стандартов китайского моделирования и почувствуйте наследие мастерства. Это ценный архив, документирующий историю развития китайского моделирования.`,
+
+		monthly2024Full: `Полная коллекция ежемесячных выпусков Model Workshop за 2024 год.
+
+Годовая подборка:
+• Полная коллекция из 12 ежемесячных выпусков
+• Выбор лучших работ года
+• Обзоры новых моделей
+• Серия учебных пособий по технике
+• Освещение модельных выставок
+
+Запись захватывающих моментов 2024 года в мире моделирования, собрание лучших работ и учебных пособий года.`,
+
+		monthly2025Full: `Последняя коллекция ежемесячных выпусков Model Workshop за 2025 год.
+
+Последний контент:
+• Постоянно обновляемые последние выпуски
+• Передовые производственные технологии
+• Первые обзоры новых продуктов
+• Колонки интервью с мастерами
+• Витрина работ читателей
+
+Будьте в курсе последних тенденций моделирования, получайте информацию о новых продуктах и техниках из первых рук.`,
 	},
 	ja: {
 		// Header
@@ -214,6 +313,39 @@ export const translations = {
 		categories: 'カテゴリー',
 		about: 'ライブラリについて',
 		copyright: 'モデルワークショップ雑誌ライブラリ. 教育目的のみ',
+
+		// Magazine Descriptions
+		anniversary10thFull: `モデルワークショップ10周年記念特集、中国トップモデラーの厳選作品を収録。
+
+特別企画：
+• 50人以上の中国モデラーの作品
+• 制作心得と技法の共有
+• 10年間の発展の歴史
+• 独占インタビューと舞台裏
+
+中国モデル制作レベルの向上を目撃し、職人精神の伝承を感じてください。これは中国モデル発展史を記録する貴重な資料です。`,
+
+		monthly2024Full: `2024年通年モデルワークショップ月刊コレクション。
+
+年間精選：
+• 12号月刊完全収録
+• 年間最優秀作品選出
+• 新製品モデルレビュー
+• 制作技法連載
+• モデル展示会レポート
+
+2024年モデル界の素晴らしい瞬間を記録し、年間最優秀作品とチュートリアルを集約。`,
+
+		monthly2025Full: `2025年最新モデルワークショップ月刊コレクション。
+
+最新コンテンツ：
+• 最新号継続更新中
+• 最先端制作技術紹介
+• 新製品先行レビュー
+• マスターインタビュー特集
+• 読者作品展示
+
+モデル界の最新動向を追い、新製品情報と制作テクニックをいち早く入手。`,
 	},
 };
 
