@@ -38,7 +38,7 @@ const magazinesData = [
 • 模型展会报道
 
 记录2024年模型界的精彩瞬间，汇集全年最优秀的作品与教程。`,
-		coverImage: '/magazines/2024/1/001.jpg',
+		coverImage: 'https://moxing12311.oss-cn-beijing.aliyuncs.com/%E6%A8%A1%E5%B7%A5%E5%9D%8A%E6%9C%88%E5%88%8A2024/1/000.jpg',
 		issues: ['1', '2', '3', '4', '5', '6', '7', '8', '10', '11', '12'],
 	},
 	{
@@ -199,7 +199,13 @@ export default function MagazineDetail() {
 						<div className="relative">
 							<div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500">
 								<img
-									src={magazine.coverImage}
+									src={
+										selectedIssue && magazine.id === 2
+											? `https://moxing12311.oss-cn-beijing.aliyuncs.com/%E6%A8%A1%E5%B7%A5%E5%9D%8A%E6%9C%88%E5%88%8A2024/${selectedIssue}/000.jpg`
+											: selectedIssue && magazine.id === 3
+											? `https://moxing12311.oss-cn-beijing.aliyuncs.com/%E6%A8%A1%E5%B7%A5%E5%9D%8A%E6%9C%88%E5%88%8A2025/${selectedIssue}/000.jpg`
+											: magazine.coverImage
+									}
 									alt={t(magazine.nameKey as any)}
 									className="w-full h-auto"
 									onError={(e) => {
