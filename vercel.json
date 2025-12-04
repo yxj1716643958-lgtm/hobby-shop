@@ -1,6 +1,7 @@
 {
-	"buildCommand": "npm run build",
-	"outputDirectory": ".next",
+	"buildCommand": "cd 官网 && npm install && npm run build",
+	"outputDirectory": "官网/.next",
+	"installCommand": "cd 官网 && npm install",
 	"framework": "nextjs",
 	"regions": ["hkg1"]
 }
